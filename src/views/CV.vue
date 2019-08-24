@@ -3,6 +3,7 @@
     <cv-header></cv-header>
     <cv-panel-header></cv-panel-header>
     <cv-panel-item></cv-panel-item>
+    {{ info }}
   </div>
 </template>
 
@@ -11,22 +12,21 @@ import cvHeader from './CV/header.vue'
 import cvPanelHeader from './CV/panel-header.vue'
 import cvPanelItem from './CV/panel-item.vue'
 
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'CV',
-  data() {
-    return {
-      p_info: {
-        name: '',
-        gender: '',
-        birth: '',
-        school: ''
-      }
-    }
-  },
   components: {
     cvHeader,
     cvPanelHeader,
     cvPanelItem
+  },
+  ready() {
+  },
+  computed: {
+    ...mapGetters({
+      info: 'info'
+    })
   }
 }
 </script>
@@ -40,5 +40,6 @@ export default {
   margin: 0;
   position: relative;
   margin: 0 auto;
+  background-color: white;
 }
 </style>

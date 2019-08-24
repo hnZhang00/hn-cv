@@ -4,9 +4,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'CV-header',
-  props: {
+  computed: {
+    ...mapGetters({
+      info: 'info'
+    })
   }
 }
 </script>
