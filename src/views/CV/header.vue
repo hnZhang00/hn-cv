@@ -1,34 +1,46 @@
 <template>
   <header class="cv-header">
     <div class="row first">
-      <h1 class="name">{{ info.name }}</h1>
-      <h2 class="job">{{ info.job }}</h2>
+      <h1 class="name">{{ name }}</h1>
+      <h2 class="job">{{ job }}</h2>
     </div>
     <div class="row">
       <ul class="left">
-        <li>{{ info.gender }} / {{info.birth }}</li>
-        <li>{{ info.school.name }} · {{info.school.major }}</li>
-        <li>{{ info.school.degree }} / {{info.school.graduationTime }}年毕业</li>
+        <li>{{ gender }} / {{ birth }}</li>
+        <li>{{ school.name }} · {{ school.major }}</li>
+        <li>{{ school.degree }} / {{ school.graduationTime }}年毕业</li>
       </ul>
       <ul class="right">
-        <li>Github - {{ info.contact.github }}</li>
-        <li>{{ info.contact.email }}</li>
-        <li>{{ info.contact.mobile }}</li>
+        <li>Github - {{ contact.github }}</li>
+        <li>{{ contact.email }}</li>
+        <li>{{ contact.mobile }}</li>
       </ul>
     </div>
   </header>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
 export default {
   name: 'CV-header',
-  computed: {
-    ...mapGetters({
-      info: 'info'
-    })
-  }
+  data() {
+    return {
+      name: '张惠娜',
+      gender: '女',
+      birth: '1995.09',
+      job: '前端开发工程师',
+      school: {
+        name: '华南农业大学',
+        major: '计算机科学与技术',
+        degree: '本科',
+        graduationTime: '2017',
+      },
+      contact: {
+        github: 'hnZhang0_0',
+        email: '1138577462@qq.com',
+        mobile: '18814127417',
+      },
+    }
+  },
 }
 </script>
 

@@ -3,20 +3,7 @@
     <cv-header></cv-header>
     <div class="cv-content">
       <div class="cv-content__item left">
-        <section class="cv-section">
-          <cv-section-header title="经历"></cv-section-header>
-          <cv-panel-item></cv-panel-item>
-        </section>
-        <section class="cv-section">
-          <cv-section-header title="项目"></cv-section-header>
-          <cv-panel-item></cv-panel-item>
-        </section>
-      </div>
-      <div class="cv-content__item right">
-        <section class="cv-section">
-          <cv-section-header title="技能"></cv-section-header>
-          <cv-panel-item></cv-panel-item>
-        </section>
+        <cv-section-experiences></cv-section-experiences>
       </div>
     </div>
   </div>
@@ -24,25 +11,25 @@
 
 <script>
 import cvHeader from './CV/header.vue'
-import cvSectionHeader from './CV/section-header.vue'
-import cvPanelItem from './CV/panel-item.vue'
-
-import { mapGetters } from 'vuex'
+import cvSectionExperiences from './CV/section-experiences.vue'
 
 export default {
   name: 'CV',
   components: {
     cvHeader,
-    cvSectionHeader,
-    cvPanelItem
+    cvSectionExperiences
   },
-  ready() {
+  data() {
+    return {
+      experiences: [
+        {
+          title: ''
+        }
+      ],
+      projects: [],
+      technologies: [],
+    }
   },
-  computed: {
-    ...mapGetters({
-      info: 'info'
-    })
-  }
 }
 </script>
 
