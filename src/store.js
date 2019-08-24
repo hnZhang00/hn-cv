@@ -19,7 +19,7 @@ export default new Vuex.Store({
       contact: {
         github: 'hnZhang0_0',
         email: '1138577462@qq.com',
-        phone: '18814127417',
+        mobile: '18814127417',
       },
     },
     experiences: [],
