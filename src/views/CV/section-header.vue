@@ -29,8 +29,9 @@ export default {
     border-radius: 32px;
     margin: 0 auto;
     position: relative;
+    font-size: 1em;
     &:before, &:after {
-      width: 30px;
+      width: 10%;
       height: 32px;
       background-color: white;
       content: '';
@@ -38,10 +39,10 @@ export default {
       top: 0;
     }
     &:before {
-      left: -30px;
+      left: -10%;
     }
     &:after {
-      right: -30px;
+      right: -10%;
     }
   }
 }

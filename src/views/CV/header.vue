@@ -11,9 +11,9 @@
         <li>{{ school.degree }} / {{ school.graduationTime }}年毕业</li>
       </ul>
       <ul class="right">
-        <li>Github - {{ contact.github }}</li>
-        <li>{{ contact.email }}</li>
-        <li>{{ contact.mobile }}</li>
+        <li>Github - {{ contact.github }}<i class="icon icon-github"></i></li>
+        <li>{{ contact.email }}<i class="icon icon-email"></i></li>
+        <li>{{ contact.mobile }}<i class="icon icon-phone"></i></li>
       </ul>
     </div>
   </header>
@@ -47,7 +47,7 @@ export default {
 <style scoped lang="less">
 .cv-header {
   width: 100%;
-  padding: 30px 40px;
+  padding: 3% 4%;
   box-sizing: border-box;
   background-color: #00b38a;
   color: white;
@@ -57,37 +57,47 @@ export default {
     &.first {
       align-items: flex-end;
       border-bottom: 2px solid #00a982;
-      padding-bottom: 15px;
-      margin-bottom: 15px;
+      padding-bottom: 1.6%;
+      margin-bottom: 1.6%;
     }
   }
   .name {
     margin: 0;
-    font-size: 46px;
     font-weight: 400;
-    letter-spacing: 5px;
+    font-size: 3.2em;
+    letter-spacing: 0.12em;
   }
   .job {
     margin: 0;
-    font-size: 24px;
+    font-size: 1.8em;
     font-weight: 300;
     text-align: right;
   }
+  .icon {
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &-github {
+      background-image: url('../../assets/github.png');
+    }
+    &-email {
+      background-image: url('../../assets/email.png');
+    }
+    &-phone {
+      background-image: url('../../assets/phone.png');
+    }
+  }
   ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
     li {
-      font-size: 14px;
-      & + li {
-        margin-top: 5px;
-      }
+      display: flex;
+      align-items: center;
     }
-    &.left {
-      text-align: left;
-    }
-    &.right {
-      text-align: right;
+    &.right li {
+      justify-content: flex-end;
     }
   }
 }

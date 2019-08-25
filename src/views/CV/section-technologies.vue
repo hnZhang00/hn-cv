@@ -1,0 +1,92 @@
+<template>
+  <section class="cv-section experiences">
+    <cv-section-header :title="title"></cv-section-header>
+    <div v-for="item in list" class="cv-section-item">
+      <div v-if="item.type" class="type">{{ item.type }}</div>
+      <p class="title">{{ item.title }}</p>
+      <ul class="list">
+        <li v-for="desc in item.descriptions" class="list-item" v-html="desc"></li>
+      </ul>
+    </div>
+  </section>
+</template>
+
+<script>
+import cvSectionHeader from './section-header.vue'
+
+export default {
+  name: 'CV-section-experiences',
+  components: {
+    cvSectionHeader,
+  },
+  data() {
+    return {
+      title: '技能',
+      list: [
+        {
+          title: 'Web',
+          type: '掌握',
+          descriptions: [
+            '熟知 JS 基本语法与 API，了解 <span class="highlight">TypeScript</span>',
+            '熟练使用 CSS、LESS 重构页面，还原设计稿',
+            '熟练使用前端各大流行技术 <span class="highlight">Vue</span>、<span class="highlight">React</span>、<span class="highlight">微信小程序</span> 等',
+            '掌握 <span class="highlight">Chrome</span> 等浏览器的调试工具',
+            '了解主流浏览器以及 <span class="highlight">IE</span> 浏览器的兼容性',
+          ],
+        },
+        {
+          title: 'Vue',
+          type: '掌握',
+          descriptions: [
+            '有多个 Vue 项目开发经验',
+            '掌握脚手架 <span class="highlight">vue-cli</span> 配置',
+            '阅读过 <span class="highlight">Vue 源码</span>，了解其底层原理以及内部实现',
+            '熟知基本语法与 API，结合 <span class="highlight">Element UI</span>，可快速开发项目',
+            '基于项目代码，沉淀出多个通用组件，减少重复性的逻辑、页面',
+          ],
+        },
+        {
+          title: 'React',
+          type: '熟练',
+          descriptions: [
+            '有多个 React 项目开发经验',
+            '阅读过脚手架 <span class="highlight">DvaJS 源码</span>，了解其底层原理以及内部实现',
+            '掌握 <span class="highlight">React Hooks</span> 的原理，并在项目中熟练使用',
+            '熟练开发<span class="highlight">高阶组件</span>，减少重复性代码',
+            '结合 <span class="highlight">Ant Design</span>，可快速开发项目',
+          ],
+        },
+        {
+          title: 'ES6',
+          type: '熟练',
+          descriptions: [
+            '熟悉基本语法与知识，在项目中可熟练使用各种 API',
+            '了解 <span class="highlight">Babel</span> 转换过程',
+          ],
+        },
+        {
+          title: 'Webpack',
+          type: '熟练',
+          descriptions: [
+            '熟悉基本语法与配置',
+            '有过 <span class="highlight">Webpack4</span> 的项目构建经验',
+          ],
+        },
+        {
+          title: '其他涉略',
+          type: '',
+          descriptions: [
+            '后端技术: Python3、Node、MongoDB',
+            '模板语言: Jinjia2、Template7',
+            '网络协议: HTTPS、HTTP2、TCP',
+            '其他技能: Git、Linux、Nginx',
+          ],
+        },
+      ]
+    }
+  }
+}
+</script>
+
+<style scoped lang="less">
+</style>
