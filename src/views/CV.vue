@@ -43,8 +43,6 @@ export default {
 .cv {
   max-width: 1000px;
   width: 100%;
-  height: 100%;
-  overflow: auto;
   padding: 0;
   margin: 0;
   position: relative;
