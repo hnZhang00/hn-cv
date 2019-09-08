@@ -1,5 +1,5 @@
 <template>
-  <header class="cv-header">
+  <header class="cv-header" :class="{pdf: env !== 'production'}">
     <div class="row first">
       <h1 class="name">{{ name }}</h1>
       <h2 class="job">{{ job }}</h2>
@@ -24,6 +24,7 @@ export default {
   name: 'CV-header',
   data() {
     return {
+      env: process.env.NODE_ENV,
       name: '张惠娜',
       gender: '女',
       birth: '1995.09',
@@ -45,12 +46,27 @@ export default {
 </script>
 
 <style scoped lang="less">
+@base-color: #00b38a;
+
 .cv-header {
   width: 100%;
   padding: 3% 4%;
   box-sizing: border-box;
-  background-color: #00b38a;
+  background-color: @base-color;
   color: white;
+  &.pdf {
+    background-color: white;
+    color: #2c3e50;
+    .icon-github {
+      background-image: url('../../assets/github_pdf.png');
+    }
+    .icon-email {
+      background-image: url('../../assets/email_pdf.png');
+    }
+    .icon-phone {
+      background-image: url('../../assets/phone_pdf.png');
+    }
+  }
   .row {
     display: flex;
     justify-content: space-between;
