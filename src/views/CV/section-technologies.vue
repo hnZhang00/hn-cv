@@ -27,7 +27,8 @@ export default {
           title: 'Web',
           type: '掌握',
           descriptions: [
-            '熟知 JS 基本语法与 API，了解 <span class="highlight">TypeScript</span>',
+            // '熟知 JS 基本语法与 API，了解 <span class="highlight">TypeScript</span>',
+            '熟知 JS 基本语法与 API',
             '熟练使用 CSS、LESS 重构页面，还原设计稿',
             '熟练使用前端各大流行技术 <span class="highlight">Vue</span>、<span class="highlight">React</span>、<span class="highlight">微信小程序</span> 等',
             '掌握 <span class="highlight">Chrome</span> 等浏览器的调试工具',
@@ -40,7 +41,7 @@ export default {
           descriptions: [
             '有多个 Vue 项目开发经验',
             '掌握脚手架 <span class="highlight">vue-cli</span> 配置',
-            '阅读过 <span class="highlight">Vue 源码</span>，了解其底层原理以及内部实现',
+            // '阅读过 <span class="highlight">Vue 源码</span>，了解其底层原理以及内部实现',
             '熟知基本语法与 API，结合 <span class="highlight">Element UI</span>，可快速开发项目',
             '基于项目代码，沉淀出多个通用组件，减少重复性的逻辑、页面',
           ],
@@ -51,7 +52,8 @@ export default {
           descriptions: [
             '有多个 React 项目开发经验',
             '阅读过脚手架 <span class="highlight">DvaJS 源码</span>，了解其底层原理以及内部实现',
-            '掌握 <span class="highlight">React Hooks</span> 的原理，并在项目中熟练使用',
+            // '掌握 <span class="highlight">React Hooks</span> 的原理，并在项目中熟练使用',
+            '熟练使用 <span class="highlight">React Hooks</span> 进行开发',
             '熟练开发<span class="highlight">高阶组件</span>，减少重复性代码',
             '结合 <span class="highlight">Ant Design</span>，可快速开发项目',
           ],
@@ -61,7 +63,7 @@ export default {
           type: '熟练',
           descriptions: [
             '熟悉基本语法与知识，在项目中可熟练使用各种 API',
-            '了解 <span class="highlight">Babel</span> 转换过程',
+            // '了解 <span class="highlight">Babel</span> 转换过程',
           ],
         },
         {
@@ -78,8 +80,9 @@ export default {
           descriptions: [
             '后端技术: Python3、Node、MongoDB',
             '模板语言: Jinjia2、Template7',
-            '网络协议: HTTPS、HTTP2、TCP',
-            '其他技能: Git、Linux、Nginx',
+            // '网络协议: HTTPS、HTTP2、TCP',
+            '其他技能: Git、Linux',
+            // '其他技能: Git、Linux、Nginx',
           ],
         },
       ]
