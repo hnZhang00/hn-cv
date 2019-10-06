@@ -84,7 +84,7 @@ export default {
     &-item {
       text-align: left;
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       .type {
         padding: 0 5px;
         line-height: 20px;
@@ -97,7 +97,9 @@ export default {
         right: 0;
       }
       .title {
+        font-size: 1.1em;
         font-weight: 600;
+        margin-bottom: 10px;
       }
       .time {
         font-weight: 400;
@@ -120,6 +122,10 @@ export default {
       }
       .item-title {
         font-weight: 600;
+      }
+      .item-content {
+        line-height: 1.43;
+        margin: 5px 0;
       }
     }
   }

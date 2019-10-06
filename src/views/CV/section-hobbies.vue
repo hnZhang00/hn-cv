@@ -21,8 +21,7 @@ export default {
     return {
       title: '爱好',
       list: [
-        '羽毛球（现公司女单冠军）',
-        'K歌',
+        '羽毛球、K歌',
       ]
     }
   }

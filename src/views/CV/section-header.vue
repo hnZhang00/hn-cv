@@ -18,7 +18,7 @@ export default {
   width: 100%;
   height: 16px;
   border-bottom: 1px solid #ededed;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   position: relative;
   .title {
     min-width: 130px;
