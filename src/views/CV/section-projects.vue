@@ -92,8 +92,8 @@ export default {
           achievements: `
             <p class="item-content">(1) 基于中台管理员和供应商管理员两种角色，实现管理后台的档案、产品、报价、订单、活动以及权限等功能;</p>
             <p class="item-content">(2) 实现商城的查看产品、添加购物车、动态计算产品活动价格、下单结算以及查看物流详情等功能;</p>
-            <p class="item-content">(3) 实现主流浏览器、IE10及以上版本的兼容使用;</p>
-            <p class="item-content">(4) 开发 ClickOutSide、Counter 等可复用组件;</p>
+            <p class="item-content">(3) 实现主流浏览器、<span class="highlight">IE10</span> 及以上版本的兼容使用;</p>
+            <p class="item-content">(4) 开发 <span class="highlight">ClickOutSide</span>、<span class="highlight">Counter</span> 等可复用组件;</p>
           `
         },
       ]
