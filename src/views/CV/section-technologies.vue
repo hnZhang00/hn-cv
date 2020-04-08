@@ -31,7 +31,7 @@ export default {
             '熟练使用 CSS、LESS 重构页面，还原设计稿',
             '熟练使用前端各大流行技术 <span class="highlight">Vue</span>、<span class="highlight">React</span>、<span class="highlight">微信小程序</span> 等',
             '熟练开发 <span class="highlight">Hybrid APP</span>，熟练使用 <span class="highlight">Cordova</span> 实现应用与原生之间的交互',
-            '有兼容 <span class="highlight">IE</span> 浏览器、主流浏览器、移动设备的实际开发经验',
+            '有兼容 <span class="highlight">IE</span>、主流浏览器、移动设备的实际开发经验',
             '熟练使用 <span class="highlight">Chrome</span>、<span class="highlight">Safari</span> 等浏览器的调试工具',
           ],
         },
@@ -41,9 +41,8 @@ export default {
           descriptions: [
             '有过多个 Vue 项目开发经验，熟知其基本语法与 API',
             '结合 <span class="highlight">vue-cli</span>、<span class="highlight">Element UI</span>，可快速开发项目',
-            '阅读过 <span class="highlight">Vue 源码</span>，了解其底层原理以及内部实现',
+            '阅读过 <span class="highlight">Vue、Vuex、Vue Router 源码</span>，熟悉其底层原理以及内部实现',
             '深入理解 <span class="highlight">Vue 组件</span>的设计与开发原理，沉淀出多个通用组件',
-            '熟练使用 <span class="highlight">Vuex</span>、<span class="highlight">Vue Router</span>',
           ],
         },
         {

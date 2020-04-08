@@ -8,7 +8,7 @@
       <ul class="left">
         <li>{{ gender }} / {{ birth }}</li>
         <li>{{ school.name }} · {{ school.major }}</li>
-        <li>{{ school.degree }} / {{ school.graduationTime }}年毕业</li>
+        <li>{{ school.degree }} / {{ school.graduationTime }}年毕业 / {{year}}年前端开发经验</li>
       </ul>
       <ul class="right">
         <li>Github - {{ contact.github }}<i class="icon icon-github"></i></li>
@@ -29,6 +29,7 @@ export default {
       gender: '女',
       birth: '1995.09',
       job: '前端开发工程师',
+      year: 4,
       school: {
         name: '华南农业大学',
         major: '计算机科学与技术',
