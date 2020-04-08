@@ -51,7 +51,7 @@ export default {
 
 .cv-header {
   width: 100%;
-  padding: 3% 4%;
+  padding: 3% 4% 1%;
   box-sizing: border-box;
   background-color: @base-color;
   color: white;

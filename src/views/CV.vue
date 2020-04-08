@@ -5,7 +5,7 @@
       <div class="cv-content__item left">
         <cv-section-experiences></cv-section-experiences>
         <cv-section-technologies></cv-section-technologies>
-        <cv-section-hobbies></cv-section-hobbies>
+        <!-- <cv-section-hobbies></cv-section-hobbies> -->
       </div>
       <div class="cv-content__item right">
         <cv-section-projects></cv-section-projects>

@@ -70,14 +70,22 @@ export default {
           ],
         },
         {
+          title: 'Node',
+          type: '熟悉',
+          descriptions: [
+            '在项目中使用过 <span class="highlight">Express</span>、<span class="highlight">Egg</span>',
+            '熟悉 <span class="highlight">MongoDB</span>',
+            '了解 <span class="highlight">Nginx</span> 配置',
+          ],
+        },
+        {
           title: '其他涉略',
           type: '',
           descriptions: [
-            '后端技术: Python3、Node、MongoDB',
-            '模板语言: Jinjia2、Template7、Underscore',
+            'UI 框架: FrameWork7、ElementUI、Ant Design、Vant',
+            '模板语言: Template7、Underscore',
             '网络协议: HTTP、HTTPS、TCP',
             '其他技能: Git、Linux',
-            // '其他技能: Git、Linux、Nginx',
           ],
         },
       ]
