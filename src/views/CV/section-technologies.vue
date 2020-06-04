@@ -32,7 +32,8 @@ export default {
             '熟练使用前端各大流行技术 <span class="highlight">Vue</span>、<span class="highlight">React</span>、<span class="highlight">微信小程序</span> 等',
             '熟练开发 <span class="highlight">Hybrid APP</span>，熟练使用 <span class="highlight">Cordova</span> 实现应用与原生之间的交互',
             '有兼容 <span class="highlight">IE</span>、主流浏览器、移动设备的实际开发经验',
-            '熟练使用 <span class="highlight">Chrome</span>、<span class="highlight">Safari</span> 等浏览器的调试工具',
+            '熟练使用 <span class="highlight">Chrome</span> 等浏览器的调试工具',
+            // '熟练使用 <span class="highlight">Chrome</span>、<span class="highlight">Safari</span> 等浏览器的调试工具',
           ],
         },
         {

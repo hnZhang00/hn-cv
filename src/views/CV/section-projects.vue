@@ -41,7 +41,7 @@ export default {
       list: [
         {
           title: '流程大师',
-          time: '2017.01-至今',
+          time: '2017.01 - 2020.05',
           type: 'Vue、Framework7',
           descriptions: '设计流程需要填写的表单以及整个审批过程中需要的节点和审批人，发布后将按照设计好的审批流在每个节点进行流转',
           technologies: 'Vue、Vue Router、Vuex、Lodash、Webpack、Framework7、Template7、Cordova',
@@ -58,7 +58,7 @@ export default {
         },
         {
           title: '430 教务系统',
-          time: '2018.11-至今',
+          time: '2018.11 - 2020.05',
           type: 'React、微信小程序',
           descriptions: '',
           technologies: '',
@@ -68,16 +68,16 @@ export default {
               achievements: `
                 <p class="item-content">(1) 使用技术: <span class="highlight">React</span>、<span class="highlight">Dva</span>、<span class="highlight">Ant Design</span> ;</p>
                 <p class="item-content">(2) 基于 <span class="highlight">WangEditor</span> 实现课程详情的富文本编辑功能;</p>
-                <p class="item-content">(3) 实现管理后台在主流浏览器、<span class="highlight">IE10</span> 及以上版本的兼容使用;</p>
-                <p class="item-content">(4) 沉淀出 <span class="highlight">面包屑</span>、<span class="highlight">ClickOutSide</span>、<span class="highlight">Counter</span> 等可复用的 React 组件;</p>
+                <p class="item-content">(3) 沉淀出 <span class="highlight">面包屑</span>、<span class="highlight">ClickOutSide</span>、<span class="highlight">Counter</span> 等可复用的 React 组件;</p>
               `
+                // <p class="item-content">(3) 实现管理后台在主流浏览器、<span class="highlight">IE10</span> 及以上版本的兼容使用;</p>
             },
             {
               title: '微信小程序',
               achievements: `
                 <p class="item-content">(1) 基于 <span class="highlight">qqmap-wx-jssdk</span> 实现定位地址的省市区展示功能;</p>
-                <p class="item-content">(1) 基于 <span class="highlight">wxParse</span> 实现解析 HTML 以展示富文本详情的功能;</p>
-                <p class="item-content">(2) 实现带农历信息的日历控件;</p>
+                <p class="item-content">(2) 基于 <span class="highlight">wxParse</span> 实现解析 HTML 以展示富文本详情的功能;</p>
+                <p class="item-content">(3) 实现带农历信息的日历控件;</p>
               `
                 // <p class="item-content">(6) 完成移动端 APP 的 <span class="highlight">H5</span> 页面，实现日程查看、点名等功能;</p>
             },
@@ -85,20 +85,20 @@ export default {
         },
         {
           title: 'WorkPlus H5 应用',
-          time: '2018.03-至今',
+          time: '2018.03 - 2020.05',
           type: 'Zepto、Underscore',
           descriptions: '移动端 H5 混合应用开发，包括组织管理、应用市场等页面',
           // technologies: 'Zepto、Underscore',
           achievements: `
             <p class="item-content">(1) 基于 <span class="highlight">Underscore</span> 的模板引擎重构页面；</p>
             <p class="item-content">(2) 使用 <span class="highlight">Zepto</span> 进行 DOM 的相关操作；</p>
-            <p class="item-content">(2) 通过 <span class="highlight">Cordova</span> 实现混合应用与原生应用之间的交互；</p>
-            <p class="item-content">(3) 基于 <span class="highlight">hashchange</span> 事件，实现 <span class="highlight">Hash Router</span>；</p>
+            <p class="item-content">(3) 通过 <span class="highlight">Cordova</span> 实现混合应用与原生应用之间的交互；</p>
+            <p class="item-content">(4) 基于 <span class="highlight">hashchange</span> 事件，实现 <span class="highlight">Hash Router</span>；</p>
           `
         },
         {
           title: 'Workplus 管理后台服务号模块',
-          time: '2017.08-至今',
+          time: '2017.08 - 2020.05',
           type: 'Angular',
           descriptions: '',
           technologies: 'Angular、Gulp、Webpack',
