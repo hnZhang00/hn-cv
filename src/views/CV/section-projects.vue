@@ -44,16 +44,16 @@ export default {
           time: '2017.01 - 2020.05',
           type: 'Vue、Framework7',
           descriptions: '设计流程需要填写的表单以及整个审批过程中需要的节点和审批人，发布后将按照设计好的审批流在每个节点进行流转',
-          technologies: 'Vue、Vue Router、Vuex、Lodash、Webpack、Framework7、Template7、Cordova',
+          technologies: 'Vue、Vue Router、Vuex、Lodash、Webpack、Framework7、Cordova',
           achievements: `
             <p class="item-content">(1) 基于 HTML5 的 <span class="highlight">Drag</span> 跟 <span class="highlight">Drop</span>，开发<span class="highlight">拖拽组件</span>，简化表单生成过程;</p>
             <p class="item-content">(2) 内嵌 <span class="highlight">iframe</span> 展示流程实例，基于 <span class="highlight">MessageChannel</span> 实现数据通信;</p>
             <p class="item-content">(3) 设置 <span class="highlight">contenteditable</span> 属性，实现简易版文本编辑器;</p>
-            <p class="item-content">(4) 基于 <span class="highlight">Publish/Subscribe</span>，实现<span class="highlight">计算组件</span>、<span class="highlight">数据库视图组件</span>；</p>
-            <p class="item-content">(5) 基于 <span class="highlight">Promise</span>，实现 <span class="highlight">Fetch</span> 请求的超时处理；</p>
+            <p class="item-content">(4) 基于 <span class="highlight">Promise</span>，实现 <span class="highlight">Fetch</span> 请求的超时处理；</p>
+            <p class="item-content">(5) 基于 <span class="highlight">Publish/Subscribe</span>，实现<span class="highlight">计算组件</span>、<span class="highlight">数据库视图组件</span>；</p>
             <p class="item-content">(6) 沉淀出 <span class="highlight">Vue</span>、<span class="highlight">Framework7</span> 可复用的组件，包括树形结构的人员和组织选择控件、日期时间选择控件等等;</p>
-            <p class="item-content">(7) 结合设计稿重构页面，完善页面交互过程，完成与后端的接口联调;</p>
           `
+            // <p class="item-content">(7) 结合设计稿重构页面，完善页面交互过程，完成与后端的接口联调;</p>
             // <p class="item-content">(5) 内嵌 <span class="highlight">iframe</span> 展示流程实例，通过 <span class="highlight">window.addEventListener("message", function(e) {}, false)</span> 实现本地与 iframe 之间的通信;</p>
         },
         {
@@ -87,7 +87,7 @@ export default {
           title: 'WorkPlus H5 应用',
           time: '2018.03 - 2020.05',
           type: 'Zepto、Underscore',
-          descriptions: '移动端 H5 混合应用开发，包括组织管理、应用市场等页面',
+          // descriptions: '移动端 H5 混合应用开发，包括组织管理、应用市场等页面',
           // technologies: 'Zepto、Underscore',
           achievements: `
             <p class="item-content">(1) 基于 <span class="highlight">Underscore</span> 的模板引擎重构页面；</p>
@@ -96,7 +96,7 @@ export default {
             <p class="item-content">(4) 基于 <span class="highlight">hashchange</span> 事件，实现 <span class="highlight">Hash Router</span>；</p>
           `
         },
-        {
+        /*{
           title: 'Workplus 管理后台服务号模块',
           time: '2017.08 - 2020.05',
           type: 'Angular',
@@ -114,7 +114,7 @@ export default {
             //                             结合 <span class="highlight">navigator.mediaDevices.getUserMedia</span> 中获取的<span class="highlight">媒体流对象</span>，
             //                             创建音频源以及效果节点，并在节点的 <span class="highlight">onaudioprocess</span> 方法采集音频数据，以此达到录音的目的，
             //                             同时将双声道变为单声道、采样位数由默认的16位改为8位，实现音频的体积压缩;</p>
-        },
+        },*/
         // {
         //   title: '前端代码生成系统',
         //   time: '2019.03-至今',

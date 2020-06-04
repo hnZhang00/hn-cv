@@ -3,11 +3,14 @@
     <cv-header></cv-header>
     <div class="cv-content">
       <div class="cv-content__item left">
-        <cv-section-experiences></cv-section-experiences>
         <cv-section-technologies></cv-section-technologies>
-        <!-- <cv-section-hobbies></cv-section-hobbies> -->
       </div>
+      <!-- <div class="cv-content__item left">
+        <cv-section-technologies></cv-section-technologies>
+        <cv-section-hobbies></cv-section-hobbies>
+      </div> -->
       <div class="cv-content__item right">
+        <cv-section-experiences></cv-section-experiences>
         <cv-section-projects></cv-section-projects>
       </div>
     </div>
@@ -48,7 +51,7 @@ export default {
   position: relative;
   margin: 0 auto;
   background-color: white;
-  font-size: 14px;
+  font-size: 15px;
   ul {
     padding: 0;
     margin: 0;
@@ -71,11 +74,9 @@ export default {
     box-sizing: border-box;
     display: flex;
     flex-wrap: 100%;
-    &__item {
-      width: e('calc(50% - 10px)');
-      &.right {
-        margin-left: 20px;
-      }
+    &__item.right {
+      flex: 1;
+      margin-left: 30px;
     }
   }
   &-section {
@@ -127,11 +128,16 @@ export default {
         line-height: 1.43;
         margin: 5px 0;
       }
+      .tips {
+        color: @base-color;
+        font-size: 12px;
+        line-height: 13px;
+      }
     }
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .cv-content {
     display: block;
     &__item {

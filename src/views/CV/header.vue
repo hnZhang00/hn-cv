@@ -37,7 +37,7 @@ export default {
         graduationTime: '2017',
       },
       contact: {
-        github: 'hnZhang0_0',
+        github: 'hnZhang00',
         email: '1138577462@qq.com',
         mobile: '18814127417',
       },
@@ -56,6 +56,7 @@ export default {
   background-color: @base-color;
   color: white;
   &.pdf {
+    padding: 3% 4% 0;
     background-color: white;
     color: #2c3e50;
     .icon-github {

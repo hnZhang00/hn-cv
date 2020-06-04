@@ -1,6 +1,6 @@
 <template>
   <section class="cv-section experiences">
-    <cv-section-header :title="title"></cv-section-header>
+    <!-- <cv-section-header :title="title"></cv-section-header> -->
     <div v-for="item in list" class="cv-section-item">
       <div v-if="item.type" class="type">{{ item.type }}</div>
       <p class="title">{{ item.title }}</p>
@@ -24,14 +24,49 @@ export default {
       title: '技能',
       list: [
         {
+          title: '源码',
+          descriptions: [
+            'Vue、Vuex、Vue Router',
+          ],
+        },
+        {
+          title: '熟练',
+          descriptions: [
+            'React、Redux、React Hooks',
+            'Hybrid APP、Cordova',
+            '微信小程序',
+            // 'Lodash、Underscore',
+            // 'Fetch、Axios',
+            'Webpack',
+            'Less、Sass',
+            // 'ElementUI、Vant、<br>Ant Design、FrameWork7',
+          ],
+        },
+        {
+          title: '了解',
+          descriptions: [
+            'Node、Express、Egg',
+            'MongoDB',
+            'Nginx',
+          ],
+        },
+        {
+          title: '其他涉略',
+          descriptions: [
+            'Http、Https、Tcp',
+            'Git、Linux',
+          ],
+        },
+        /*{
           title: 'Web',
           type: '掌握',
           descriptions: [
             '熟知 JS 基本语法与 API',
             '熟练使用 CSS、LESS 重构页面，还原设计稿',
             '熟练使用前端各大流行技术 <span class="highlight">Vue</span>、<span class="highlight">React</span>、<span class="highlight">微信小程序</span> 等',
+            // '熟练开发 <span class="highlight">Hybrid APP</span>，熟练使用 <span class="highlight">Cordova</span>',
             '熟练开发 <span class="highlight">Hybrid APP</span>，熟练使用 <span class="highlight">Cordova</span> 实现应用与原生之间的交互',
-            '有兼容 <span class="highlight">IE</span>、主流浏览器、移动设备的实际开发经验',
+            // '有兼容 <span class="highlight">IE</span>、主流浏览器、移动设备的实际开发经验',
             '熟练使用 <span class="highlight">Chrome</span> 等浏览器的调试工具',
             // '熟练使用 <span class="highlight">Chrome</span>、<span class="highlight">Safari</span> 等浏览器的调试工具',
           ],
@@ -88,7 +123,7 @@ export default {
             '网络协议: HTTP、HTTPS、TCP',
             '其他技能: Git、Linux',
           ],
-        },
+        },*/
       ]
     }
   }
@@ -96,4 +131,11 @@ export default {
 </script>
 
 <style scoped lang="less">
+.cv-section.experiences {
+  width: 245px;
+  padding: 25px 20px 0;
+  margin-top: 55px;
+  border: 2px solid #00a982;
+  box-sizing: border-box;
+}
 </style>
